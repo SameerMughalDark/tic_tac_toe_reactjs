@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+.board-container{
+  width: 500px;
+  height: 100vh;
+  margin: auto;
+ /* border: 2px solid red; */
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.board-row{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.square{
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+  font-size: 22px;
+display: flex;
+justify-content: center;
+align-items: center;  
+  background-color: rgb(252, 252, 32);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.square:hover{
+  background-color: rgb(26, 65, 52);
+  color: whitesmoke;
+}
+.playAgainSection{
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  align-items: center;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.playAgainSection button{
+  height: 40px;
+  width: 140px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: whitesmoke;
+  background-color: rgb(26, 65, 52);
 }
